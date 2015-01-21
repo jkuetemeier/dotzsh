@@ -48,7 +48,7 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 bindkey -v
 bindkey "^F" vi-cmd-mode
 bindkey jj vi-cmd-mode
-bindkey jk vi-cmd-mode
+#bindkey jk vi-cmd-mode
 
 # add missing vim hotkeys
 # fixes backspace deletion issues
@@ -87,6 +87,12 @@ setopt long_list_jobs           # Show pid in bg job list
 setopt no_hist_beep             # Don not beep on history expansion errors
 setopt interactive_comments     # Comments in history
 setopt prompt_subst             # Prompt more dynamic, allow function in prompt
+
+# directory stack
+# more info: http://zsh.sourceforge.net/Intro/intro_6.html
+# hint: use 'd', 'po', 'pu' and 'cd -4'
+export DIRSTACKSIZE=8
+setopt autopushd pushdminus pushdsilent pushdtohome
 
 # Report to me when other people login/logout
 watch=(notme)
