@@ -3,6 +3,7 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Jörg Kütemeier <jk@kuetemeier.net>
 #
 
 #
@@ -20,6 +21,11 @@ fi
 export EDITOR='vi'
 export VISUAL='vi'
 export PAGER='less'
+
+if which vim &>/dev/null ; then
+  export EDITOR='vim'
+  export VISUAL='vim'
+fi
 
 #
 # Language
@@ -42,9 +48,12 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # Set the list of directories that Zsh searches for programs.
+#
+# mkdir .git/safe in the root of repositories you trust
 path=(
   /usr/local/{bin,sbin}
   ~/bin
+  .git/safe/../../bin
   $path
 )
 
@@ -76,3 +85,7 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
+
+# Local config
+[[ -f "${ZDOTDIR:-$HOME}/.zprofile.local" ]] && source "${ZDOTDIR:-$HOME}/.zprofile.local"
+
