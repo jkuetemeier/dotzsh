@@ -1,3 +1,11 @@
+My Zsh configuration based on Prezto
+====================================
+
+This repository is a fork of [sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
+with some enhancements (at last for me) and configuration customizations.
+
+Original Readme below:
+
 Prezto — Instantly Awesome Zsh
 ==============================
 
