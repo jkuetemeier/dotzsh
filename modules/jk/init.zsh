@@ -111,10 +111,10 @@ if which vim &>/dev/null ; then
 fi
 
 if which mvim &>/dev/null ; then
-  alias e=mvim
+  alias m=mvim
 fi
 
-alias gitignore="curl -O https://gist.githubusercontent.com/jkuetemeier/98900a7ea5e9e419687e/raw/1560c82e611fa2c2fbea59882f8292ecad9a3551/.gitignore"
+alias gitignore="curl -O https://gist.githubusercontent.com/jkuetemeier/98900a7ea5e9e419687e/raw/9970221619c469dd01da86715e402facfedc22b2/.gitignore"
 
 # Determine if the terminal supports 256 colors
 if [[ `tput colors` == "256" ]]; then
