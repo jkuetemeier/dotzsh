@@ -1,4 +1,4 @@
-My Zsh configuration
+dotzsh - My Zsh configuration
 ====================================
 
 My Zsh configuration is based on [sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
@@ -12,17 +12,17 @@ version is 4.3.17.
 
   1. Check for and launch a zsh:
 
-    zsh
+      zsh
 
   2. Fetch install-script and excute:
 
-    curl https://raw.githubusercontent.com/jkuetemeier/dotzsh/master/install.zsh | zsh
+      curl https://raw.githubusercontent.com/jkuetemeier/dotzsh/master/install.zsh | zsh
 
   3. Open a new Zsh terminal window or tab. Test around.
 
   4. Set Zsh as your default shell:
 
-    chsh -s /bin/zsh
+      chsh -s /bin/zsh
 
 
 ### Troubleshooting
