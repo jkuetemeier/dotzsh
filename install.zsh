@@ -3,7 +3,7 @@
 
 TODAY=`date +%Y%m%d-%H-%M`
 ZSHDIR="${ZDOTDIR:-$HOME}/.zsh"
-PRESTODIR="$ZSHDIR/prezto"
+PRESTODIR="$ZSHDIR/dotzsh"
 
 if [ -e $ZSHDIR ]; then
   mv "$ZSHDIR" "$HOME/.zsh-$TODAY"
@@ -11,7 +11,7 @@ fi
 
 mkdir $ZSHDIR
 
-git clone --recursive https://github.com/jkuetemeier/prezto.git "$PRESTODIR"
+git clone --recursive https://github.com/jkuetemeier/dotzsh.git "$PRESTODIR"
 
 setopt EXTENDED_GLOB
 
