@@ -145,9 +145,9 @@ fi
 # go
 #
 if [ -e /usr/local/opt/go/libexec/bin ]; then
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin
-  export GOPATH=/usr/local/opt/go/libexec/bin
-  export GOBIN=$HOME/bin
+  export GOPATH=$HOME/go
+  export GOBIN=$HOME/go/bin
+  export PATH=$GOBIN:$PATH:/usr/local/opt/go/libexec/bin
 fi
 
 # no interactive 'rm'
