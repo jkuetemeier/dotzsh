@@ -150,6 +150,12 @@ if [ -e /usr/local/opt/go/libexec/bin ]; then
   export PATH=$GOBIN:$PATH:/usr/local/opt/go/libexec/bin
 fi
 
+if [ -e /usr/bin/go ]; then
+  export GOPATH=$HOME/go
+  export GOBIN=$HOME/go/bin
+  export PATH=$GOBIN:$PATH
+fi
+
 # no interactive 'rm'
 unalias rm
 alias rm='nocorrect rm'
