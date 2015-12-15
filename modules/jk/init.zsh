@@ -143,18 +143,28 @@ if [ -e $HOME/perl5 ]; then
 fi
 
 # go
-#
+
+# go on MAC (homebrew)
 if [ -e /usr/local/opt/go/libexec/bin ]; then
   export GOPATH=$HOME/go
   export GOBIN=$HOME/go/bin
   export PATH=$GOBIN:$PATH:/usr/local/opt/go/libexec/bin
 fi
 
+# go on CentOS (yum)
 if [ -e /usr/bin/go ]; then
   export GOPATH=$HOME/go
   export GOBIN=$HOME/go/bin
   export PATH=$GOBIN:$PATH
 fi
+
+# go with native package install from golang.org
+if [ -e /usr/local/go ]; then
+  export GOPATH=$HOME/go
+  export GOBIN=$HOME/go/bin
+  export PATH=$GOBIN:/usr/local/go/bin:$PATH
+fi
+
 
 # no interactive 'rm'
 unalias rm
