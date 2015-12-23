@@ -165,6 +165,10 @@ if [ -e /usr/local/go ]; then
   export PATH=$GOBIN:/usr/local/go/bin:$PATH
 fi
 
+# packer in project dir
+if [ -e ~/projects/packer ]; then
+  export PATH=~/projects/packer:$PATH
+fi
 
 # no interactive 'rm'
 unalias rm
