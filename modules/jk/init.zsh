@@ -142,6 +142,10 @@ if [ -e $HOME/perl5 ]; then
   export PERL5LIB="$HOME/perl5/lib/perl5"
 fi
 
+# run local npm package binaries
+
+export PATH=./node_modules/.bin:$PATH
+
 # go
 
 # go on MAC (homebrew)
