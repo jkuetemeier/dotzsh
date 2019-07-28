@@ -1,3 +1,7 @@
+# Archived
+
+See https://github.com/kuetemeier/home-files for a more recent version of my dotfiles and zsh configuration.
+
 dotzsh - My Zsh configuration
 ====================================
 
